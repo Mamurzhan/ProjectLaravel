@@ -26,3 +26,7 @@ Route::post('/update-user',[Sdu1Controller::class,'updateUser'])->name('user.upd
 Route::get('/delete-user/{id}',[Sdu1Controller::class,'deleteUser']);
 Route::get('/sendemail',[EmailController::class,'index']);
 Route::post('/sendemail/send',[EmailController::class,'send']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
