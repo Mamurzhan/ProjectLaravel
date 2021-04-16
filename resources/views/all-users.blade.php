@@ -43,7 +43,7 @@
                         {{Session::get('user_deleted')}}
                       </div> 
                     @endif
-                @foreach ($sduies as $sdu1)
+                @foreach ($sdu1s as $sdu1)
                 <span>
                     <div class="card text-white rounded mb-3">
                         <div class="colr ">
