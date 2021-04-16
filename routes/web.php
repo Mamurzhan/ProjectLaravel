@@ -14,10 +14,12 @@ use App\Http\Controllers\EmailController;
 |
 */
 
-
+Route::get('/', function () {
+    return view('welcome');
+});
 Route::get('/add-story',[Sdu1Controller::class,'addStory']);
 Route::post('/add-story',[Sdu1Controller::class,'storeStory'])->name('story.store');
-Route::get('/',[Sdu1Controller::class,'users']);
+Route::get('/all-user',[Sdu1Controller::class,'users']);
 Route::get('/edit-user/{id}',[Sdu1Controller::class,'editUser']);
 Route::post('/update-user',[Sdu1Controller::class,'updateUser'])->name('user.update');
 Route::get('/delete-user/{id}',[Sdu1Controller::class,'deleteUser']);

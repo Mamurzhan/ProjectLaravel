@@ -30,9 +30,9 @@ class Sdu1Controller extends Controller
     }
 public function users(){
 
-    $sdu1s = Sdu1::all();
+    $sduies = Sdu1::all();
 
-    return view('all-users',compact('sdu1s'));
+    return view('all-users',compact('sduies'));
 }
 public function editUser($id){
     $sdu1 =Sdu1::find($id);
