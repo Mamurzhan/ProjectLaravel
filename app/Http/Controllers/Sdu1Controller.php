@@ -4,8 +4,22 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Sdu1;
+use App\Models\Like;
 class Sdu1Controller extends Controller
 {
+    public function addComment(Request $request,$id){
+        $user_id = $request->user_id;
+        $text = $request->text;
+        $sdu1 =new Sdu1();
+
+        $like = new Like();
+        $like->user = $user_id;
+        $like->text = $text;
+        $sdu1->like()->save($like);
+        return back()->with('com' , 'Comment added!');
+
+    }
+
     public function addStory(){
         return view('add-story');
     }
@@ -28,11 +42,33 @@ class Sdu1Controller extends Controller
         return back()->with('story_added' , 'story record has been inserted');
 
     }
+    
 public function users(){
 
     $sduies = Sdu1::all();
 
+    return view('all-ru ',compact('sduies'));
+}
+public function users2(){
+
+    $sduies = Sdu1::all();
+
+    return view('home',compact('sduies'));
+}public function users3(){
+
+    $sduies = Sdu1::all();
+
+    return view('ru',compact('sduies'));
+}public function users5(){
+
+    $sduies = Sdu1::all();
+
     return view('all-users',compact('sduies'));
+}public function users4(){
+
+    $sduies = Sdu1::all();
+
+    return view('all-ru',compact('sduies'));
 }
 public function editUser($id){
     $sdu1 =Sdu1::find($id);

@@ -4,7 +4,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     </head>
     <body>
-    <section class="bg-dark text-light" style="padding-top: 60px;">
+    <section class=" text-dark" style="padding-top: 60px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 offset-md-3">
@@ -64,4 +64,12 @@
             }
         }
     </script>
+    <style>
+        body{
+            background-image: url('https://assets.codepen.io/1462889/back-page.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 101%;
+        }
+    </style>
     </body>

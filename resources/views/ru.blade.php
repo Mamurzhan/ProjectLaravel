@@ -85,17 +85,18 @@
   <div class="wrapper">
     <div class="text">
       <div class="text-inner">
-        <h2>Shear Your</h2>
-        <h1>Sroty</h1>
-        <p>In this site, you can add your story and photos</p>
-        <a href="/add-story" class="btn">Add Story</a>
-        <a href="/all-user" class="btn">Read Story</a>
+        <h2>Покажи</h2>
+        <h1>Историу</h1>
+        <p>На этом сайте вы можете добавить свою историю и фотографии</p>
+        <a href="/add-story" class="btn">Добавить историю</a>
+        <a href="/all-user" class="btn">Прочитать историю</a>
         <div class="sociali">
           <a href="#"><i class="fa fa-facebook"></i></a>
           <a href="#"><i class="fa fa-twitter"></i></a>
           <a href="#"><i class="fa fa-instagram"></i></a>
           <a href="/ru">Ru</a>
           <a href="/home">En</a>
+
         </div>
       </div>
     </div>

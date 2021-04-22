@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Sdu1 extends Model
+class Like extends Model
 {
     use HasFactory;
-    protected $table = "sdu1s";
+    protected $table = "likes";
     public function Like(){
         return $this->hasMany(Like::class);
     }
